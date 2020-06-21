@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Mukta', "Arial Narrow", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(to bottom right, #ffa9bf, #8483ff)
+}
+i {
+    font-size: 25px;
+    position: absolute;
+    right:5%;
+    color: rgb(241, 138, 138);
+    cursor:pointer
+}
+.container {
+    border: 5px dashed #aa4;
+    height: 550px;
+    margin: auto;
+    padding: 0;
+    width: 350px;
+}
+.field{
+background: url("basket\ field.jpg") no-repeat center center/cover;
+}
+.pointer {
+    background: #444;
+    border-bottom: 0;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    margin-top: 30px;
+    padding: 10px 0;
+    text-align: center;
+    position:relative
+}
+#player1, #player2, #player3 {
+    border-radius: 29px;
+    cursor: pointer;
+    height: 50px;
+    position: absolute;
+    transition: 0.2s;
+    width: 50px;
+}
+#player1{
+    background: url("images/basketball.svg") no-repeat center center/cover ;
+}
+#player2{
+    display: none;
+    background: url("images/tennis\ ball.png") no-repeat center center/cover ;
+    height: 30px;
+    width:30px;
+}
+#player3{
+  display: none;
+    background: url("images/football.png") no-repeat center center/cover ;
+}
+.text {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 10%;
+    text-align: center;
+    color:black;
+}
+
+.points1 {
+    color: rgb(139, 8, 8);
+    margin-top: 1%;
+}
+.reload, .next1, .next2,.ok {
+    -webkit-user-select: none; 
+    background: rgb(226, 226, 226);
+    border: 1px solid black;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    margin-top: 5%;
+    margin-left: 50%;
+    padding: 5px;
+    transform: translateX(-50%);
+    width: 80%;
+    font-weight: 500;
+    color:black
+
+}
+.next1, .next2 {
+    background: rgb(202, 157, 157);
+}
+.instructions{
+    background: radial-gradient(rgb(243, 237, 237), rgb(209, 209, 209));
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border:1px solid black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.ok {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
+}
+.next1:hover, .next2:hover{
+    background: rgb(180, 129, 129);
+}
+.reload:hover, .ok:hover{
+    background:rgb(218, 217, 217);
+}

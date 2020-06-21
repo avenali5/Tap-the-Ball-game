@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tap the ball!</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/pelota.png">
+        <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container pointer">
+            <span id="points"></span>
+            <span id="ned"></span>
+            <span id="time"></span>
+            <span id="time2"></span>
+            <span id="time3"></span>
+            <span class="img" onclick="location.reload()"><i class="fas fa-redo"></i></span>
+        </div>
+
+        <div class="container field">
+            <p class="instructions">Tap the ball as many times as the counter says
+                to get to the next level
+            </p>
+            <p class="ok">Let's go!</p>
+
+            <div id="player1"></div>
+            <div id="player2"></div>
+            <div id="player3"></div>
+
+            <p class="text"></p><br>
+            <p class="text points1"></p>
+
+            <p class="text reload" onclick="location.reload()">Play Again</p>
+            <p class="text next1">Next Level</p>
+            <p class="text next2">Next Level</p>
+        </div>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
